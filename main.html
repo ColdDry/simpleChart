@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" ng-app="lineChart">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Chart</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="myCtrl as ctrl">
+<canvas id="chart" class="chart chart-line" chart-data="ctrl.data"
+        chart-labels="ctrl.labels" chart-series="ctrl.series" chart-options="ctrl.options"
+        chart-dataset-override="ctrl.datasetOverride" chart-click="ctrl.onClick"></canvas>
+</body>
+</html>
